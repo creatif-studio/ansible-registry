@@ -1,4 +1,4 @@
-# Docker Registry
+# CloudBoz Registry
 Hosting your own Docker Hub
 
 # Requirements
