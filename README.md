@@ -1,3 +1,19 @@
+# Docker Registry Deployer
+
+This project provides a set of Ansible, Terraform and Vagrant configuration files to deploy a docker application to a local/cloud environment. The deployment process includes setting up the necessary infrastructure, configuring servers, installing software, and starting the application.
+
+## Prerequisites
+
+To use this project, you will need the following:
+
+- A cloud provider account with appropriate permissions to create and manage resources.
+- Ansible, Terraform, Vagrant, VirtualBox installed on your local machine.
+- A valid SSH key pair for authenticating with the remote servers.
+
+## Getting Started
+
+To get started, follow these steps:
+
 # CloudBoz Registry
 Hosting your own Docker Hub
 
@@ -18,6 +34,28 @@ Hosting your own Docker Hub
 }
 ```
 - Reload docker service
+
+## Directory Structure
+
+Here is an overview of the directory structure of this project:
+
+```
+elastic-search-deployer/
+├── README.md
+├── ansible/
+│   ├── group_vars/
+│   ├── host_vars/
+│   ├── inventory/
+│   ├── main.yml
+│   └── roles/
+│       ├── common/
+│       ├── nginx/
+│       └── web/
+└── terraform/
+    ├── main.tf
+    ├── terraform.tfvars
+    └── variables.tf
+```
 
 ## Contributing
 
